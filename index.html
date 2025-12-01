@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio - Ferdiansyah Dwi Andhika Agustian</title>
+  <title>Portfolio - Ferdiansyah Dwi Andhika A.</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="style.css">
   <meta name="color-scheme" content="light dark">
 </head>
+
 <body>
-  <!-- Floating shapes / particles container -->
-  <div class="particles" aria-hidden="true">
+
+  <!-- Background particles -->
+  <div class="particles">
     <div class="particle p1"></div>
     <div class="particle p2"></div>
     <div class="particle p3"></div>
@@ -23,7 +25,7 @@
   <!-- Navbar -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a class="brand" href="#home">Ferdiansyah Dwi Andhika Agustian</a>
+      <a class="brand" href="#home">Ferdiansyah Dwi Andhika A.</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -40,17 +42,23 @@
   </header>
 
   <main>
-    <!-- Home -->
+
+    <!-- Hero -->
     <section id="home" class="section hero">
       <div class="container hero-inner">
+        
+        <!-- text -->
         <div class="hero-left">
           <h1 class="reveal">
             <span class="greeting">Hi, Saya</span>
             <span class="name">Ferdiansyah Dwi Andhika A.</span>
           </h1>
-          <h2 class="typed reveal" data-strings='["Welcome to my Portfolio.","Mahasiswa Sistem Informasi"]'></h2>
 
-          <p class="lead reveal">Saya membuat Web Elegan, Simple, dengan tampilan Modern</p>
+          <h2 class="typed reveal" 
+              data-strings='["Web Developer & Designer", "Membuat Web Modern, Simple & Elegan"]'>
+          </h2>
+
+          <p class="lead reveal">Saya membuat Website modern dengan tampilan bersih, elegan, dan responsif.</p>
 
           <div class="hero-cta reveal">
             <a href="#contact" class="btn primary" id="contactBtn">Contact Me</a>
@@ -58,16 +66,17 @@
           </div>
         </div>
 
+        <!-- Foto profil -->
         <div class="hero-right reveal">
           <div class="profile-card">
-            <!-- FOTO KAMU DI SINI -->
-            <img src="profil-removebg-preview.png" alt="Foto Profil" class="profile-img">
+            <img src="profil-removebg-preview.png" alt="Foto profil" class="profile-img">
             <div class="profile-info">
               <h3>Ferdiansyah Dwi Andhika A.</h3>
               <p>Mahasiswa Universitas Komputama</p>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -75,54 +84,61 @@
     <section id="about" class="section about">
       <div class="container">
         <div class="about-grid">
+
           <div class="about-photo reveal">
-            <!-- FOTO KAMU DI SINI JUGA -->
-            <img src="profil-removebg-preview.png" alt="Foto Profil">
+            <img src="profil-removebg-preview.png" alt="Foto profil">
           </div>
+
           <div class="about-content reveal">
             <h2>About Me</h2>
-            <p>Saya seorang mahasiswa semester 5 di Universitas Komputama Majenang, saya mengambil jurusan Sistem Informasi.</p>
+            <p>
+              Saya adalah mahasiswa Sistem Informasi yang memiliki minat besar pada Web Development.
+              Saya fokus membuat website dengan tampilan modern, UI yang rapi, dan pengalaman pengguna yang baik.
+            </p>
+
             <ul class="about-list">
-              <li><strong>Lokasi:</strong> Majenang</li>
-              <li><strong>Ketertarikan:</strong> Web, Design, Animation</li>
+              <li><strong>Nama:</strong> Ferdiansyah Dwi Andhika A.</li>
+              <li><strong>Pendidikan:</strong> Universitas Komputama</li>
+              <li><strong>Fokus:</strong> Web Developer, UI/UX</li>
+              <li><strong>Domisili:</strong> Indonesia</li>
             </ul>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Skill -->
+    <!-- Skills -->
     <section id="skill" class="section skills">
       <div class="container">
         <h2 class="section-title reveal">Skills</h2>
 
         <div class="skill-grid">
+
           <div class="skill-card reveal">
             <div class="skill-head">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
               <h3>HTML & CSS</h3>
             </div>
-            <p>Mampu membuat responsif design dan modern layout</p>
+            <p>Mahir dalam layouting, responsive design, dan modern styling.</p>
             <div class="progress" data-value="95"><span></span></div>
           </div>
 
           <div class="skill-card reveal">
             <div class="skill-head">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1010 10A10 10 0 0012 2z"></path></svg>
               <h3>JavaScript</h3>
             </div>
-            <p>Membuat animasi yang modern dan menarik</p>
-            <div class="progress" data-value="85"><span></span></div>
+            <p>Menguasai DOM, animasi, dan dasar-dasar modern JS.</p>
+            <div class="progress" data-value="80"><span></span></div>
           </div>
 
           <div class="skill-card reveal">
             <div class="skill-head">
-              <svg class="skill-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M5 3h14v18H5z"></path></svg>
-              <h3>UI/UX</h3>
+              <h3>UI/UX Design</h3>
             </div>
-            <p>membuat Design systems dan prototypes</p>
-            <div class="progress" data-value="80"><span></span></div>
+            <p>Desain yang simple, clean, dan fokus pada kenyamanan pengguna.</p>
+            <div class="progress" data-value="75"><span></span></div>
           </div>
+
         </div>
       </div>
     </section>
@@ -133,25 +149,34 @@
         <h2 class="section-title reveal">Pengalaman</h2>
 
         <div class="timeline">
+
           <div class="timeline-item reveal">
             <div class="dot"></div>
             <div class="timeline-content">
-              <h3>Pelayanan Masyarakat</h3>
-              <span class="meta">2021 — 2022</span>
-              <p>Melayani masyarakat di balai desa Adimulya, meliputi input data, edit data, maupun hapus data</p>
+              <h3>Proyek Web Pribadi</h3>
+              <span class="meta">2023 — Sekarang</span>
+              <p>Mengerjakan berbagai proyek website pribadi untuk mengasah kemampuan front-end.</p>
             </div>
           </div>
 
           <div class="timeline-item reveal">
             <div class="dot"></div>
             <div class="timeline-content">
-              <h3>Frontend Developer</h3>
-              <span class="meta">2025 — 2028</span>
-              <p>Membuat website responsif dengan design yang menarik dan modern.</p>
+              <h3>UI/UX Basic Project</h3>
+              <span class="meta">2024</span>
+              <p>Mendesain tampilan website sederhana dengan konsep clean & modern.</p>
             </div>
           </div>
 
-    
+          <div class="timeline-item reveal">
+            <div class="dot"></div>
+            <div class="timeline-content">
+              <h3>Freelance Kecil</h3>
+              <span class="meta">2024</span>
+              <p>Mengerjakan pembuatan halaman web sederhana untuk UMKM.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -162,6 +187,7 @@
         <h2 class="section-title reveal">Contact</h2>
 
         <div class="contact-grid">
+          
           <form id="contactForm" class="contact-form reveal" novalidate>
             <label>
               <span>Nama</span>
@@ -180,42 +206,44 @@
 
             <div class="form-actions">
               <button type="submit" class="btn primary ripple">Send Message</button>
+
               <div class="socials">
-                <a class="social" href="#" aria-label="GitHub" title="GitHub"></a>
-                <a class="social" href="#" aria-label="LinkedIn" title="LinkedIn"></a>
-                <a class="social" href="#" aria-label="Instagram" title="Instagram"></a>
+                <a class="social" href="https://github.com/ferday1945" target="_blank">GitHub</a>
+                <a class="social" href="#" target="_blank">Instagram</a>
+                <a class="social" href="#" target="_blank">LinkedIn</a>
               </div>
             </div>
-            <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+            <div id="formMessage" class="form-message"></div>
           </form>
 
           <div class="contact-info reveal">
-            <h3>Get in touch</h3>
-            <p>Hubungi email cikukunf@gmail.com</p>
+            <h3>Get in Touch</h3>
+            <p>Email cepat: <b>ferdi@example.com</b></p>
             <div class="contact-cards">
               <div class="card">
                 <strong>Location</strong>
-                <p>Majenang</p>
+                <p>Indonesia</p>
               </div>
               <div class="card">
                 <strong>Availability</strong>
-                <p>Terbuka untuk Freelance</p>
+                <p>Open for remote & freelance</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-        <p>© <span id="year"></span> Ferdiansyah Dwi Andhika A. Built with HTML, CSS & JavaScript.</p>
+        <p>© <span id="year"></span> Ferdiansyah Dwi Andhika A. | Portfolio</p>
       </div>
     </footer>
+
   </main>
 
   <script src="script.js" defer></script>
 </body>
 </html>
-
-
