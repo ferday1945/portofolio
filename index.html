@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio - Ferdiansyah Dwi Andhika A.</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
   <meta name="color-scheme" content="light dark">
 </head>
-
 <body>
 
-  <!-- Background particles -->
   <div class="particles">
     <div class="particle p1"></div>
     <div class="particle p2"></div>
@@ -22,20 +18,19 @@
     <div class="particle p4"></div>
   </div>
 
-  <!-- Navbar -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a class="brand" href="#home">Ferdiansyah Dwi Andhika A.</a>
-
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-
       <nav class="nav-links" id="navLinks">
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#skill" class="nav-link">Skill</a>
         <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#education" class="nav-link">Pendidikan</a>
+        <a href="#project" class="nav-link">Project</a>
         <a href="#contact" class="nav-link cta">Contact</a>
       </nav>
     </div>
@@ -43,30 +38,20 @@
 
   <main>
 
-    <!-- Hero -->
     <section id="home" class="section hero">
       <div class="container hero-inner">
-        
-        <!-- text -->
         <div class="hero-left">
           <h1 class="reveal">
             <span class="greeting">Hi, Saya</span>
             <span class="name">Ferdiansyah Dwi Andhika A.</span>
           </h1>
-
-          <h2 class="typed reveal" 
-              data-strings='["Web Developer & Designer", "Membuat Web Modern, Simple & Elegan"]'>
-          </h2>
-
+          <h2 class="typed reveal" data-strings='["Web Developer & Designer", "Membuat Web Modern, Simple & Elegan"]'></h2>
           <p class="lead reveal">Saya membuat Website modern dengan tampilan bersih, elegan, dan responsif.</p>
-
           <div class="hero-cta reveal">
             <a href="#contact" class="btn primary" id="contactBtn">Contact Me</a>
             <a href="#experience" class="btn ghost">Pengalaman</a>
           </div>
         </div>
-
-        <!-- Foto profil -->
         <div class="hero-right reveal">
           <div class="profile-card">
             <img src="profil-removebg-preview.png" alt="Foto profil" class="profile-img">
@@ -76,26 +61,18 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- About -->
     <section id="about" class="section about">
       <div class="container">
         <div class="about-grid">
-
           <div class="about-photo reveal">
             <img src="profil-removebg-preview.png" alt="Foto profil">
           </div>
-
           <div class="about-content reveal">
             <h2>About Me</h2>
-            <p>
-              Saya adalah mahasiswa Sistem Informasi yang memiliki minat besar pada Web Development.
-              Saya fokus membuat website dengan tampilan modern, UI yang rapi, dan pengalaman pengguna yang baik.
-            </p>
-
+            <p>Saya adalah mahasiswa Sistem Informasi yang memiliki minat besar pada Web Development.</p>
             <ul class="about-list">
               <li><strong>Nama:</strong> Ferdiansyah Dwi Andhika A.</li>
               <li><strong>Pendidikan:</strong> Universitas Komputama</li>
@@ -103,144 +80,91 @@
               <li><strong>Domisili:</strong> Indonesia</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
     <section id="skill" class="section skills">
       <div class="container">
         <h2 class="section-title reveal">Skills</h2>
-
         <div class="skill-grid">
-
-          <div class="skill-card reveal">
-            <div class="skill-head">
-              <h3>HTML & CSS</h3>
-            </div>
-            <p>Mahir dalam layouting, responsive design, dan modern styling.</p>
-            <div class="progress" data-value="95"><span></span></div>
-          </div>
-
-          <div class="skill-card reveal">
-            <div class="skill-head">
-              <h3>JavaScript</h3>
-            </div>
-            <p>Menguasai DOM, animasi, dan dasar-dasar modern JS.</p>
-            <div class="progress" data-value="80"><span></span></div>
-          </div>
-
-          <div class="skill-card reveal">
-            <div class="skill-head">
-              <h3>UI/UX Design</h3>
-            </div>
-            <p>Desain yang simple, clean, dan fokus pada kenyamanan pengguna.</p>
-            <div class="progress" data-value="75"><span></span></div>
-          </div>
-
+          <div class="skill-card reveal"><div class="skill-head"><h3>HTML & CSS</h3></div><p>Mahir dalam layouting.</p><div class="progress" data-value="95"><span></span></div></div>
+          <div class="skill-card reveal"><div class="skill-head"><h3>JavaScript</h3></div><p>Menguasai DOM dan animasi.</p><div class="progress" data-value="80"><span></span></div></div>
+          <div class="skill-card reveal"><div class="skill-head"><h3>UI/UX Design</h3></div><p>Desain simple & clean.</p><div class="progress" data-value="75"><span></span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- Pengalaman -->
     <section id="experience" class="section experience">
       <div class="container">
         <h2 class="section-title reveal">Pengalaman</h2>
-
         <div class="timeline">
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>Proyek Web Pribadi</h3><span class="meta">2023 — Sekarang</span><p>Mengerjakan berbagai proyek website pribadi.</p></div></div>
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>UI/UX Basic Project</h3><span class="meta">2024</span><p>Mendesain tampilan website modern.</p></div></div>
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>Freelance UMKM</h3><span class="meta">2024</span><p>Mengerjakan halaman web sederhana untuk UMKM.</p></div></div>
+        </div>
+      </div>
+    </section>
 
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="timeline-content">
-              <h3>Proyek Web Pribadi</h3>
-              <span class="meta">2023 — Sekarang</span>
-              <p>Mengerjakan berbagai proyek website pribadi untuk mengasah kemampuan front-end.</p>
-            </div>
+    <!-- Pendidikan -->
+    <section id="education" class="section education">
+      <div class="container">
+        <h2 class="section-title reveal">Pendidikan</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>SMP</h3><span class="meta">2016 - 2019</span><p>Riwayat pendidikan SMP.</p></div></div>
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>SMK - Teknik Komputer Jaringan</h3><span class="meta">2019 - 2022</span><p>Mendalami jaringan & komputer.</p></div></div>
+          <div class="timeline-item reveal"><div class="dot"></div><div class="timeline-content"><h3>Perguruan Tinggi - Sistem Informasi</h3><span class="meta">2022 - Sekarang</span><p>Mahasiswa Universitas Komputama.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" class="section project">
+      <div class="container">
+        <h2 class="section-title reveal">Project Saya</h2>
+        <div class="project-grid">
+
+          <div class="project-card reveal">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Website UMKM</h3>
+            <p>Website landing page modern.</p>
           </div>
 
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="timeline-content">
-              <h3>UI/UX Basic Project</h3>
-              <span class="meta">2024</span>
-              <p>Mendesain tampilan website sederhana dengan konsep clean & modern.</p>
-            </div>
+          <div class="project-card reveal">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Desain UI/UX</h3>
+            <p>Mockup aplikasi mobile.</p>
           </div>
 
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="timeline-content">
-              <h3>Freelance Kecil</h3>
-              <span class="meta">2024</span>
-              <p>Mengerjakan pembuatan halaman web sederhana untuk UMKM.</p>
-            </div>
+          <div class="project-card reveal">
+            <video controls width="100%">
+              <source src="project-video.mp4" type="video/mp4">
+            </video>
+            <h3>Video Showcase Project</h3>
+            <p>Demo proses pembuatan website.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section contact">
       <div class="container">
         <h2 class="section-title reveal">Contact</h2>
-
         <div class="contact-grid">
-          
           <form id="contactForm" class="contact-form reveal" novalidate>
-            <label>
-              <span>Nama</span>
-              <input type="text" name="name" required placeholder="Nama Anda">
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" required placeholder="you@example.com">
-            </label>
-
-            <label>
-              <span>Pesan</span>
-              <textarea name="message" rows="5" required placeholder="Tinggalkan pesan..."></textarea>
-            </label>
-
-            <div class="form-actions">
-              <button type="submit" class="btn primary ripple">Send Message</button>
-
-              <div class="socials">
-                <a class="social" href="https://github.com/ferday1945" target="_blank">GitHub</a>
-                <a class="social" href="#" target="_blank">Instagram</a>
-                <a class="social" href="#" target="_blank">LinkedIn</a>
-              </div>
-            </div>
-
+            <label><span>Nama</span><input type="text" name="name" required></label>
+            <label><span>Email</span><input type="email" name="email" required></label>
+            <label><span>Pesan</span><textarea name="message" rows="5" required></textarea></label>
+            <div class="form-actions"><button type="submit" class="btn primary ripple">Send Message</button></div>
             <div id="formMessage" class="form-message"></div>
           </form>
-
-          <div class="contact-info reveal">
-            <h3>Get in Touch</h3>
-            <p>Email cepat: <b>ferdi@example.com</b></p>
-            <div class="contact-cards">
-              <div class="card">
-                <strong>Location</strong>
-                <p>Indonesia</p>
-              </div>
-              <div class="card">
-                <strong>Availability</strong>
-                <p>Open for remote & freelance</p>
-              </div>
-            </div>
-          </div>
-
+          <div class="contact-info reveal"><h3>Get in Touch</h3><p>Email cepat: <b>ferdi@example.com</b></p></div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <p>© <span id="year"></span> Ferdiansyah Dwi Andhika A. | Portfolio</p>
-      </div>
-    </footer>
+    <footer class="footer"><div class="container"><p>© <span id="year"></span> Ferdiansyah Dwi Andhika A.</p></div></footer>
 
   </main>
 
